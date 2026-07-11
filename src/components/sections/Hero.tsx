@@ -5,12 +5,26 @@ import { motion } from "framer-motion";
 import Container from "../ui/Container";
 import HeroOrbit from "../hero/HeroOrbit";
 
+import SpaceBackground from "../hero/SpaceBackground";
+
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#062b22]">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_35%,rgba(52,211,153,0.18),transparent_34%)]" />
+    
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#020d0b] via-[#052b21] to-[#071b17]">
+  <SpaceBackground />
 
-      <div className="absolute inset-0 opacity-[0.08] bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:54px_54px]" />
+  <Container className="relative z-10">
+    {/* hero content */}
+  
+
+ 
+      <div
+  className="absolute inset-0 opacity-[0.025]
+  bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)]
+  bg-[size:64px_64px]"
+/>
+
+<div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/10" />
 
       <Container className="relative z-10">
         <div className="grid min-h-[690px] items-center gap-12 pb-24 pt-16 lg:grid-cols-[0.95fr_1.05fr] lg:pb-28 lg:pt-20">
@@ -85,11 +99,16 @@ export default function Hero() {
           aria-hidden="true"
         >
           <path
-            d="M0,88 C280,132 560,18 850,61 C1080,95 1260,116 1440,60 L1440,115 L0,115 Z"
-            fill="#ffffff"
+            d="M0,90 C250,150 540,10 820,70 C1080,125 1260,100 1440,55 L1440,115 L0,115 Z"
           />
         </svg>
       </div>
-    </section>
+
+      </Container>
+</section>
+
+  
+
+    
   );
 }
