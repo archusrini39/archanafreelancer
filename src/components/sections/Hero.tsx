@@ -27,7 +27,7 @@ export default function Hero() {
 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/10" />
 
       <Container className="relative z-10">
-        <div className="grid min-h-[690px] items-center gap-12 pb-24 pt-16 lg:grid-cols-[0.95fr_1.05fr] lg:pb-28 lg:pt-20">
+        <div className="grid min-h-[700px] items-center gap-12 pb-36 pt-14 lg:grid-cols-[0.92fr_1.08fr] lg:pb-44 lg:pt-16">
           <motion.div
             initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ export default function Hero() {
               Technology Partner for Growing Businesses
             </div>
 
-            <h1 className="text-[46px] font-bold leading-[1.04] tracking-[-0.04em] text-white sm:text-6xl lg:text-[72px]">
+            <h1 className="text-[46px] font-bold leading-[1.04] tracking-[-0.045em] text-white sm:text-6xl lg:text-[68px] xl:text-[76px]">
               Helping businesses
               <span className="block text-[#86efac]">
                 grow with AI &
@@ -48,11 +48,11 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className="mt-7 max-w-xl text-base leading-8 text-emerald-50/75 sm:text-lg">
+            <p className="mt-7 max-w-[535px] text-base leading-8 text-emerald-50/75 sm:text-lg">
               We build premium websites, mobile applications, AI-powered
               solutions and business automation systems that help growing
               companies attract customers, improve operations and scale with
-              confidence.
+              confidence.   
             </p>
 
             <div className="mt-9 flex flex-wrap gap-4">
@@ -90,21 +90,107 @@ export default function Hero() {
           </motion.div>
         </div>
       </Container>
+      <div className="absolute bottom-[38px] left-0 w-full opacity-60 sm:bottom-[48px] lg:bottom-[60px]">
+  <svg
+    viewBox="0 0 1440 70"
+    preserveAspectRatio="none"
+    className="block h-[45px] w-full lg:h-[65px]"
+    aria-hidden="true"
+  >
+    <path
+      d="M0,45 C230,90 470,66 690,35 C900,6 1030,20 1180,42 C1300,60 1380,53 1440,38"
+      fill="none"
+      stroke="rgba(134,239,172,0.45)"
+      strokeWidth="3"
+    />
+  </svg>
+</div>
 
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-        <svg
-          viewBox="0 0 1440 115"
-          preserveAspectRatio="none"
-          className="block h-[70px] w-full sm:h-[90px] lg:h-[115px]"
-          aria-hidden="true"
-        >
-          <path
-            d="M0,90 C250,150 540,10 820,70 C1080,125 1260,100 1440,55 L1440,115 L0,115 Z"
-          />
-        </svg>
-      </div>
+      <div className="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-none">
+  <svg
+    viewBox="0 0 1440 140"
+    preserveAspectRatio="none"
+    className="block h-[90px] w-full sm:h-[115px] lg:h-[140px]"
+    aria-hidden="true"
+  >
+    <path
+      d="M0,72 C210,135 430,126 640,86 C840,48 960,29 1140,64 C1260,89 1360,86 1440,58 L1440,140 L0,140 Z"
+      fill="#eaf8f1"
+    />
+  </svg>
+</div>
+
+
+
 
       </Container>
+
+
+
+      {/* Layered wave transition */}
+<div className="pointer-events-none absolute bottom-[-1px] left-0 z-20 w-full">
+  {/* Glowing upper line */}
+  <svg
+    viewBox="0 0 1440 135"
+    preserveAspectRatio="none"
+    className="absolute bottom-[8px] left-0 h-[105px] w-full sm:h-[125px] lg:h-[145px]"
+    aria-hidden="true"
+  >
+    <path
+      d="
+        M0,63
+        C180,122 355,119 532,82
+        C730,41 857,21 1040,61
+        C1210,98 1330,97 1440,55
+      "
+      fill="none"
+      stroke="rgba(52,211,153,0.85)"
+      strokeWidth="3"
+      className="drop-shadow-[0_0_8px_rgba(52,211,153,0.65)]"
+    />
+  </svg>
+
+  {/* Subtle secondary contour */}
+  <svg
+    viewBox="0 0 1440 135"
+    preserveAspectRatio="none"
+    className="absolute bottom-[2px] left-0 h-[100px] w-full opacity-60 sm:h-[120px] lg:h-[140px]"
+    aria-hidden="true"
+  >
+    <path
+      d="
+        M0,70
+        C185,128 360,126 540,90
+        C730,51 875,28 1050,70
+        C1210,108 1330,104 1440,63
+      "
+      fill="none"
+      stroke="rgba(167,243,208,0.55)"
+      strokeWidth="2"
+    />
+  </svg>
+
+  {/* Main mint fill */}
+  <svg
+    viewBox="0 0 1440 135"
+    preserveAspectRatio="none"
+    className="relative block h-[92px] w-full sm:h-[115px] lg:h-[135px]"
+    aria-hidden="true"
+  >
+    <path
+      d="
+        M0,72
+        C185,132 365,130 545,92
+        C735,52 875,32 1052,72
+        C1215,109 1333,107 1440,65
+        L1440,135
+        L0,135
+        Z
+      "
+      fill="#eaf8f1"
+    />
+  </svg>
+</div>
 </section>
 
   

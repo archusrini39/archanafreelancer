@@ -16,16 +16,18 @@ export default function Home() {
     </>
   );
 }*/
-
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
+import TrustStats from "@/components/sections/TrustStats";
 
 export default function Home() {
   return (
     <>
       <Navbar />
+
       <main>
         <Hero />
+        <TrustStats />
       </main>
     </>
   );
