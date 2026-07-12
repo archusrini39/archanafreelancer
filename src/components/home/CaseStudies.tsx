@@ -28,7 +28,7 @@ const featuredProject = {
     "Clearer presentation of services",
   ],
   technologies: ["WordPress", "Elementor", "SEO", "Responsive Design"],
-  url: "https://sinaraglobal.com",
+  url: "https://sinara.demoarchanafreelancerapps.online/",
 };
 
 const supportingProjects = [

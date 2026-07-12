@@ -21,6 +21,10 @@ import Hero from "@/components/home/Hero";
 import BusinessOutcomes from "@/components/home/BusinessOutcomes";
 import Industries from "@/components/home/Industries";
 import CaseStudies from "@/components/home/CaseStudies";
+import Process from "@/components/home/Process";
+import CTA from "@/components/home/CTA";
+
+
 
 export default function Home() {
   return (
@@ -32,6 +36,10 @@ export default function Home() {
 <BusinessOutcomes />
 <Industries />
 <CaseStudies />
+
+<Process />
+
+<CTA />
 
       </main>
     </>
