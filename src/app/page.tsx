@@ -17,8 +17,10 @@ export default function Home() {
   );
 }*/
 import Navbar from "@/components/layout/Navbar";
-import Hero from "@/components/sections/Hero";
-import TrustStats from "@/components/sections/TrustStats";
+import Hero from "@/components/home/Hero";
+import BusinessOutcomes from "@/components/home/BusinessOutcomes";
+import Industries from "@/components/home/Industries";
+import CaseStudies from "@/components/home/CaseStudies";
 
 export default function Home() {
   return (
@@ -27,7 +29,10 @@ export default function Home() {
 
       <main>
         <Hero />
-        <TrustStats />
+<BusinessOutcomes />
+<Industries />
+<CaseStudies />
+
       </main>
     </>
   );
