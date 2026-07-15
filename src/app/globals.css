@@ -37,3 +37,10 @@ button,
 a {
   font: inherit;
 }
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+

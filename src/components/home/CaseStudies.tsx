@@ -68,7 +68,7 @@ const supportingProjects = [
 
 export default function CaseStudies() {
   return (
-    <section id="work" className="relative overflow-hidden bg-white py-24 sm:py-28 lg:py-32">
+    <section id="work" className="relative overflow-hidden bg-white py-20 sm:py-28 lg:py-24">
       {/* Subtle background glow */}
       <div className="pointer-events-none absolute left-1/2 top-[26rem] h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-emerald-100/50 blur-[150px]" />
 
@@ -87,28 +87,31 @@ export default function CaseStudies() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.7 }}
-          className="mt-16 overflow-hidden rounded-[32px] border border-emerald-950/10 bg-[#f7fcf9] shadow-[0_30px_90px_rgba(15,23,42,0.07)] sm:mt-20"
+          className="mt-10 overflow-hidden rounded-[30px] border border-[#c9a55c]/35 bg-[#f7fcf9] shadow-[0_24px_70px_rgba(15,23,42,0.07)]"
         >
-          <div className="grid items-center gap-10 p-6 sm:p-10 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16 lg:p-14">
+          <div className="grid items-center gap-10 p-6 sm:p-8 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16 lg:p-14">
             <motion.div
               whileHover={{ y: -5, rotateX: 1.5, rotateY: -1.5 }}
               transition={{ duration: 0.3 }}
               className="relative"
             >
               <div className="absolute inset-8 rounded-full bg-emerald-300/25 blur-[70px]" />
-
-              <DeviceFrame>
-                <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-slate-100">
-                  <Image
-                    src={featuredProject.image}
-                    alt={`${featuredProject.title} website homepage`}
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 55vw"
-                    className="object-cover object-top"
-                    priority={false}
-                  />
-                </div>
-              </DeviceFrame>
+<div className="absolute inset-6 rounded-full bg-[#d4af67]/20 blur-[80px]" />
+              <div className="relative rounded-[26px] bg-gradient-to-br from-[#f5e7bc] via-[#b78c3f] to-[#7c5a20] p-[2px] shadow-[0_24px_70px_rgba(130,94,32,0.18)]">
+  <div className="rounded-[24px] bg-white p-2">
+    <DeviceFrame>
+      <div className="relative aspect-[16/10] overflow-hidden rounded-[18px] bg-slate-100">
+        <Image
+          src={featuredProject.image}
+          alt={`${featuredProject.title} project preview`}
+          fill
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          className="object-cover object-top transition duration-700 group-hover:scale-[1.025]"
+        />
+      </div>
+    </DeviceFrame>
+  </div>
+</div>
             </motion.div>
 
             <div>
@@ -181,7 +184,7 @@ export default function CaseStudies() {
         </motion.article>
 
         {/* Supporting projects */}
-        <div className="mt-20 sm:mt-24">
+        <div className="mt-14 sm:mt-24">
           <div className="mb-9 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-700">
@@ -204,23 +207,27 @@ export default function CaseStudies() {
                   duration: 0.65,
                   delay: index * 0.12,
                 }}
-                className="group overflow-hidden rounded-[30px] border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)] transition duration-500 hover:-translate-y-2 hover:border-emerald-300 hover:shadow-[0_30px_80px_rgba(15,23,42,0.1)]"
+                className="group overflow-hidden rounded-[28px] border border-[#c9a55c]/30 bg-white shadow-[0_18px_50px_rgba(15,23,42,0.06)] transition duration-500 hover:-translate-y-2 hover:border-[#b78c3f]/70 hover:shadow-[0_28px_75px_rgba(130,94,32,0.12)]"
               >
                 <div className="bg-[#f7fcf9] p-5 sm:p-7">
-                  <DeviceFrame>
-                    <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-slate-100">
-                      <Image
-                        src={project.image}
-                        alt={`${project.title} project preview`}
-                        fill
-                        sizes="(max-width: 1024px) 100vw, 50vw"
-                        className="object-cover object-top transition duration-700 group-hover:scale-[1.025]"
-                      />
-                    </div>
-                  </DeviceFrame>
+                  <div className="relative rounded-[26px] bg-gradient-to-br from-[#f5e7bc] via-[#b78c3f] to-[#7c5a20] p-[2px] shadow-[0_24px_70px_rgba(130,94,32,0.18)]">
+  <div className="rounded-[24px] bg-white p-2">
+    <DeviceFrame>
+      <div className="relative aspect-[16/10] overflow-hidden rounded-[18px] bg-slate-100">
+        <Image
+          src={project.image}
+          alt={`${project.title} project preview`}
+          fill
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          className="object-cover object-top transition duration-700 group-hover:scale-[1.025]"
+        />
+      </div>
+    </DeviceFrame>
+  </div>
+</div>
                 </div>
 
-                <div className="p-7 sm:p-9">
+                <div className="p-7 sm:p-7">
                   <p className="text-sm font-semibold uppercase tracking-[0.22em] text-emerald-700">
                     {project.category}
                   </p>

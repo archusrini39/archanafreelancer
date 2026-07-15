@@ -10,7 +10,7 @@ export default function CTA() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-gradient-to-br from-[#020d0b] via-[#052b21] to-[#071b17] py-24 sm:py-28 lg:py-32"
+      className="relative overflow-hidden bg-gradient-to-br from-[#020d0b] via-[#052b21] to-[#071b17] py-20 sm:py-20 lg:py-24"
     >
       <SpaceBackground />
 
@@ -41,7 +41,7 @@ export default function CTA() {
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="https://calendly.com/"
+              href="https://calendly.com/archusrini81/30min"
               target="_blank"
               rel="noreferrer"
               className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#86efac] px-7 py-4 font-semibold text-[#052e22] transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-[0_18px_45px_rgba(134,239,172,0.2)] sm:w-auto"

@@ -52,7 +52,7 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="bg-white py-32">
+    <section className="bg-white py-20 lg:py-24">
       <Container>
         <SectionHeader
           eyebrow="OUR PROCESS"
@@ -62,7 +62,7 @@ export default function Process() {
           align="left"
         />
 
-        <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-5">
+        <div className="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-5">
           {steps.map((step, index) => {
             const Icon = step.icon;
 
@@ -76,7 +76,7 @@ export default function Process() {
                   duration: 0.5,
                   delay: index * 0.1,
                 }}
-                className="group rounded-3xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:-translate-y-2 hover:border-emerald-300 hover:shadow-xl"
+                className="group rounded-3xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-2 hover:border-emerald-300 hover:shadow-xl"
               >
                 <span className="text-5xl font-bold text-emerald-100">
                   {step.number}

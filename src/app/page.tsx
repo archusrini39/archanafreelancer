@@ -23,6 +23,7 @@ import Industries from "@/components/home/Industries";
 import CaseStudies from "@/components/home/CaseStudies";
 import Process from "@/components/home/Process";
 import CTA from "@/components/home/CTA";
+import Footer from "@/components/home/Footer";
 
 
 
@@ -40,6 +41,8 @@ export default function Home() {
 <Process />
 
 <CTA />
+
+<Footer />
 
       </main>
     </>

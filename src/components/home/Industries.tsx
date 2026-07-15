@@ -13,7 +13,7 @@ const industries = [
 
 export default function Industries() {
   return (
-    <section className="bg-[#F7FCF9] py-14">
+    <section className="bg-[#F7FCF9] py-10 lg:py-12">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

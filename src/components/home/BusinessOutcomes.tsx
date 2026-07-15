@@ -30,7 +30,7 @@ const cards = [
 
 export default function BusinessOutcomes() {
   return (
-    <section className="bg-[#F7FCF9] py-28">
+    <section className="bg-[#F7FCF9] py-20 lg:py-24">
       <Container>
         <SectionHeader
           eyebrow="WHAT WE HELP YOU ACHIEVE"
@@ -51,7 +51,7 @@ export default function BusinessOutcomes() {
               },
             },
           }}
-          className="mt-20 grid gap-8 lg:grid-cols-3"
+          className="mt-14 grid gap-8 lg:grid-cols-3"
         >
           {cards.map((card) => (
             <FeatureCard
